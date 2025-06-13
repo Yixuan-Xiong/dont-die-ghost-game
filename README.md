@@ -20,20 +20,22 @@
 - Modular, extensible codebase structured for maintainability.
 
 ## Project Structure
-don‘t_die_game/  
-├── main.py # Game entry point  
-├── chatbot_base.py # Contains ChatbotBase. 
-├── chatbot.py # Main game flow controller (MyChatbot)  
-├── player.py # Player class (status, damage, reset)  
-├── game_bot.py # GameBot class (ghost logic and interaction)  
-├── constants.py # Ghosts, evidence, and tool mappings  
-├── config.json # Centralized game settings (HP, intervals, etc.)  
-├── utils/  
-│ └── keywords_rake.py # RAKE keyword detection helper  
-├── requirements.txt # Required Python libraries  
-└── tests/    
-  └── test_game_bot.py # Test player behavior (health, reset, fear logic)  
-  └── test_game_bot.py # Test game logic (ghost guessing, evidence detection, attacks)  
+
+dont_die_game/
+├── main.py              # Game entry point
+├── chatbot_base.py      # Contains ChatbotBase
+├── chatbot.py           # Main game flow controller (MyChatbot)
+├── player.py            # Player class (status, damage, reset)
+├── game_bot.py          # GameBot class (ghost logic and interaction)
+├── constants.py         # Ghosts, evidence, and tool mappings
+├── config.json          # Centralized game settings (HP, intervals, etc.)
+├── utils/
+│   └── keywords_rake.py # RAKE keyword detection helper
+├── requirements.txt     # Required Python libraries
+└── tests/
+    ├── test_game_bot.py   # Test game logic (ghost guessing, evidence detection, attacks)
+    └── test_player.py     # Test player behavior (health, reset, fear logic)
+
 
 ## Installation & Setup  
 
@@ -91,7 +93,7 @@ Use Python’s built-in `unittest` module to automatically discover and run test
 python -m unittest discover tests
 ```
 This will run all the tests in the entire tests/ folder.  
-
+  
 Or run a specific test:  
 
 `test_player.py`: Verifies player mechanics like damage, fear, sanity, and reset.  
