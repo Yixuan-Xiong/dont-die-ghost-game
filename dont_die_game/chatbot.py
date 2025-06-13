@@ -54,7 +54,7 @@ class MyChatbot(ChatbotBase):
             user_input = input("\n> ").strip().lower()
             
             # Detect key words
-            action = self.game_bot.detect_keywords_rake(user_input)
+            action = self.game_bot.detect_keywords(user_input)
             
             # Choose tool
             if action == "tool":

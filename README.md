@@ -16,7 +16,7 @@
 - 7 investigative tools to collect evidence.
 - Dynamic health, sanity, and fear mechanics.
 - ASCII ghost visuals for each ghost type.
-- Keyword recognition powered by NLTK for flexible player input.
+- Keyword recognition powered by NLTK (`word_tokenize` + `stopwords`).  
 - Modular, extensible codebase structured for maintainability.
 
 ## Project Structure  
@@ -59,7 +59,7 @@ find . -name "*.pyc" -delete
 pip uninstall nltk
 pip install nltk==3.8.1
 ```
-and do the NLTK Setup again.  
+and then re-running the game will automatically download the punkt and stopwords.
 
 ### 3. Run the game  
 ```bash
@@ -76,7 +76,7 @@ This project includes unit tests for critical game components such as the `Playe
 Use Python’s built-in `unittest` module to automatically discover and run tests:  
 
 ```bash
-python -m unittest discover tests
+python -m unittest discover -s dont_die_game/tests -p "test_*.py"
 ```
 This will run all the tests in the entire tests/ folder.  
   

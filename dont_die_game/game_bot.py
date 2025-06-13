@@ -1,7 +1,7 @@
 import random
 import json
 from dont_die_game.constants import ghost_types, evidence_tool_map, tools
-from dont_die_game.utils.keywords_rake import extract_keywords_rake
+from dont_die_game.utils.keywords_extractor import extract_keywords
 
 # Ask Chatgpt load initial values from config.json
 # Get the current directory path
@@ -125,9 +125,9 @@ class GameBot:
         }
         print(arts[ghost_type])
 
-    def detect_keywords_rake(self, user_input):
+    def detect_keywords(self, user_input):
         # Define action keywords
-        extracted_keywords = extract_keywords_rake(user_input)
+        extracted_keywords = extract_keywords(user_input)
         keywords_map = {
             "tool": ["tool", "use tool", "tools", "use", "find"],
             "evidence": ["review", "check", "see", "have","evidence"],

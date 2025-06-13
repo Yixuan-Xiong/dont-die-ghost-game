@@ -14,7 +14,7 @@ for resource in ['punkt', 'stopwords']:
     except LookupError:
         nltk.download(resource)
 
-def extract_keywords_rake(user_input):
+def extract_keywords(user_input):
     # Tokenize the input into individual words
     words = word_tokenize(user_input)
     # Load English stopwords from NLTK
