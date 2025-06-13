@@ -19,22 +19,22 @@
 - Keyword recognition powered by NLTK for flexible player input.
 - Modular, extensible codebase structured for maintainability.
 
-## Project Structure
+## Project Structure  
 
-dont_die_game/
-├── main.py              # Game entry point
-├── chatbot_base.py      # Contains ChatbotBase
-├── chatbot.py           # Main game flow controller (MyChatbot)
-├── player.py            # Player class (status, damage, reset)
-├── game_bot.py          # GameBot class (ghost logic and interaction)
-├── constants.py         # Ghosts, evidence, and tool mappings
-├── config.json          # Centralized game settings (HP, intervals, etc.)
-├── utils/
-│   └── keywords_rake.py # RAKE keyword detection helper
-├── requirements.txt     # Required Python libraries
-└── tests/
-    ├── test_game_bot.py   # Test game logic (ghost guessing, evidence detection, attacks)
-    └── test_player.py     # Test player behavior (health, reset, fear logic)
+dont_die_game/  
+├── main.py              # Game entry poin  
+├── chatbot_base.py      # Contains ChatbotBase  
+├── chatbot.py           # Main game flow controller (MyChatbot)  
+├── player.py            # Player class (status, damage, reset)  
+├── game_bot.py          # GameBot class (ghost logic and interaction)  
+├── constants.py         # Ghosts, evidence, and tool mappings  
+├── config.json          # Centralized game settings (HP, intervals, etc.)  
+├── utils/  
+│   └── keywords_rake.py # RAKE keyword detection helper  
+├── requirements.txt     # Required Python libraries  
+└── tests/  
+    ├── test_game_bot.py   # Test game logic (ghost guessing, evidence detection, attacks)  
+    └── test_player.py     # Test player behavior (health, reset, fear logic)  
 
 
 ## Installation & Setup  
