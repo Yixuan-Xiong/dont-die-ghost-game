@@ -20,6 +20,7 @@
 - Modular, extensible codebase structured for maintainability.
 
 ## Project Structure  
+![Screenshot](Structure.jpg)
 
 dont_die_game/  
 ├── main.py              # Game entry poin  
