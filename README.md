@@ -20,8 +20,22 @@
 - Modular, extensible codebase structured for maintainability.
 
 ## Project Structure  
-Because typing into markdown is confusingly structured, use the screenshot.  
-![Screenshot](Structure.jpg)
+```text
+dont_die_game/
+├── main.py           # Game entry poin
+├── chatbot_base.py   # Contains ChatbotBase
+├── chatbot.py        # Main game flow controller (MyChatbot)
+├── player.py         # Player class (status, damage, reset)
+├── game_bot.py       # GameBot class (ghost logic and interaction)
+├── constants.py      # Ghosts, evidence, and tool mappings
+├── config.json       # Centralized game settings (HP, intervals, etc.)
+├── utils/
+│   └── keywords_extractor.py  # NLTK Keyword detection helper
+├── requirements.txt  # Required Python libraries
+└── tests/
+    ├── test_game_bot.py  # Test game logic (ghost guessing, evidence detection, attacks)
+    └── test_player.py    # Test player behavior (health, reset, fear logic)
+```
 
 ## Installation & Setup  
 
