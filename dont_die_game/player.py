@@ -28,7 +28,6 @@ class Player:
         print(f"\n*** You lose {amount} health, {sanity_loss} sanity, and gain {fear_increase} fear ***")
         if self.health <= 0 or self.sanity <= 0:
             self.alive = False
-            print(f"\n Unfortunately{self.name}, you're dead. Game over.")
 
     # Resets the player’s status to their initial values, allowing them to start a new game.
     def reset(self):
