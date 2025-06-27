@@ -1,6 +1,8 @@
 # Don't Die
 
-**Don't Die** is a command-line ghost-hunting game where you must collect evidence using various tools and correctly identify the ghost before it kills you. And the video link：https://ual.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6339a476-e193-4df2-b0a8-b2fe0149952c&start=0
+**Don't Die** is a command-line ghost-hunting game where you must collect evidence using various tools and correctly identify the ghost before it kills you.
+## Display
+[](https://github.com/user-attachments/assets/c5e8ee13-06eb-44a3-bd6c-42828c6e205e)
 
 ## How to Play
 
